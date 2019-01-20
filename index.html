@@ -1,7 +1,487 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<body></body>
-<script></script>
+
+        <title>Trifecta Real Estate </title>
+        <head>
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/style-search.css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:100|Poiret+One" rel="stylesheet">
+        
+        
+        </head>
+        <body>
+            <!-- /******* Navigation Section ********/ -->
+            <nav id="top-nav" >
+                <div class="nav-logo">
+                  <i class="fas fa-map-pin" style="margin-right: 3px;"></i>
+                  REAL ESTATE
+                </div>
+                <div class="nav-options">
+                    <ul>
+                      <li>Buy</li>
+                      <li>Rent</li>
+                      <li>Mortgage</li>
+                      <li>Local Scoop</li>
+                      <li>More</li>
+                    </ul>
+                </div>
+                <div class="savedNsearches">
+                  <ul>
+                      <li>Saved Homes</li>
+                      <li>Saved Searches</li>
+                  </ul>
+                </div>
+                <div class="nav-signin">
+                    <button class="clickable-btn-sign-in">Sign In</button>
+        <nav class="main-nav">
+            <ul id="menu-id" class="menu display-hidden">
+                <li class="close">
+                    <span id="logo-close" style="margin: 0px 84px;">
+                        <i class="fas fa-map-pin" style="margin-right: 3px;"></i> 
+                        Real
+                    </span>
+                    <i class="fas fa-times close-action"></i></li>
+                <div class="burger-tap"><i class="fas fa-bars"></i></div>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Mortgage</a></li>
+                <li><a href="#">Local Scoop</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <span class="mobile-btn">
+              <i class="fas fa-bars"></i>
+            </span>
+            <div class="overlay"></div>
+          </nav>
+            </nav>
+            <!-- /******* Search & Filter Section Right Under Nav ********/ -->
+            <div class="search-filter-nav">
+                <form class="search-container" style="flex: 1;">
+                    <input type="text" id="search-bar" placeholder="Search Cities..">
+                    <div class="search-icon-div"><i class="fas fa-search"></i></div>
+                </form>
+                <div onclick="myFunction()" class="anyPrice-div box-size-nav-u custom-test dropdown dropbutton" style="flex: 1; list-style-type: none;">
+                        <div class="dropdown">
+                                <a onclick="myFunction()" class="dropdown dropbutton">Any Price <i class="fas fa-caret-down" style="margin: 0px 4px;"></i></a>
+                                  <div id="myDropdown" class="dropdown-content"">
+                                    <li><a>Any Price</a></li>
+                                    <li><a>$250k-$500k</a></li>
+                                    <li><a>$500k-$1M</a></li>
+                                    <li><a>$1M-$100m</a></li>
+                                  </div>
+                                </div>
+                </div>
+        
+                <div class="allBeds-div box-size-nav-u custom-test" style="flex: 1; margin-left: -5px;">
+                    All Beds
+                    <i class="fas fa-caret-down" style="margin: 0px 4px;"></i>
+                </div>
+        
+                <div class="allhomes-div box-size-nav-uon custom-test" style="flex: 1; padding: 0px 7px;">
+                    All Home Types
+                    <i class="fas fa-caret-down" style="margin: 0px 4px;"></i>
+                </div>
+                <div class="more-div box-size-nav-uon custom-test" style="flex: 1; margin-left: -5px;">
+                    More
+                    <i class="fas fa-caret-down" style="margin: 0px 4px;"></i>
+                </div>
+        
+                <div class="saveSearch-div box-size-nav-uon " style="flex: 3; margin: 2px 0px;">
+                    <button>
+                    Save Search</button>
+                </div>
+            </div>
+        
+        
+        <!-- /******* Homes Listing Left Side ********/ -->
+        <!-- /******* Google Map Listing Right Side ********/ -->
+        <div id="homesNMap-main-platform">
+          <div class="leftside-homes-container">
+            <div class="sortforyou-container">
+                <div class="sortforyou-div" style="display: inline-block; text-align: center;">
+                    Sort: Just For You
+                    <i class="fas fa-caret-down" style="margin-left: 10px; "></i>
+                </div>
+                <div class="list-yourhome" style="display: inline-block; text-align: center;">
+                        List your home
+                        <i class="fas fa-plus" style="margin: 0px 10px; font-size: 13px;"></i>
+                    </div>
+                <div class="paragraph-div-under">
+                    <p>San Francisco, CA Homes For Sale & Real Estate <i class="fas fa-circle" style="
+                        font-size: 12px; 
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 7px;
+                        font-size: 6px;
+                        padding: 1px 3px;"></i> <span class="bl-text">258 homes available</span></p>
+                </div>
+        
+                <!-- / ******* ************************ ********/ -->
+                <!-- / ******* 8 box div of homes n info ********/ -->
+                <!-- / ******* ************************ ********/ -->
+        
+        
+                <div class="homes-list-platform">
+                    <div class="home-section-1 home-custom">
+                        <div class="img-div">
+            
+                        </div>
+                        <div class="price-div">$1,974,000</div>
+                        <div class="bdBaSqft-div">
+                            <i class="fas fa-bed fa-style-on"></i> 
+                            <h6 class="h6-style-on bd-name">2bd</h6>
+        
+                            <i class="fas fa-bath fa-bed-style-on"></i> 
+                            <h6 class="h6-bed-style-on ba-name">3ba</h6>
+        
+                            <h6 class="h6-bed-style-on sqft-name">1,234 sqft</h6>
+                        </div>
+                        <div class="home-address">
+                            <h5 class="addy">
+                                <span id="street-name">1874 Bonanza St #15</span> <br>
+                                <span id="city-name">San Francisco</span>, <span id="state-name">CA</span>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="home-section-2 home-custom">
+                        <div class="img-div">
+            
+                        </div>
+                        <div class="price-div">$2,066,000</div>
+                        <div class="bdBaSqft-div">
+                            <i class="fas fa-bed fa-style-on"></i> 
+                            <h6 class="h6-style-on">2bd</h6>
+        
+                            <i class="fas fa-bath fa-bed-style-on"></i> 
+                            <h6 class="h6-bed-style-on">3ba</h6>
+        
+                            <h6 class="h6-bed-style-on">1,234 sqft</h6>
+                        </div>
+                        <div class="home-address">
+                            <h5 class="addy">
+                                1433 Ocean Dr #33<br>
+                                San Francisco, CA 94122
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="home-section-3 home-custom">
+                        <div class="img-div">
+            
+                        </div>
+                        <div class="price-div">$2,759,500+</div>
+                        <div class="bdBaSqft-div">
+                            <i class="fas fa-bed fa-style-on"></i> 
+                            <h6 class="h6-style-on">2bd</h6>
+        
+                            <i class="fas fa-bath fa-bed-style-on"></i> 
+                            <h6 class="h6-bed-style-on">3ba</h6>
+        
+                            <h6 class="h6-bed-style-on">1,234 sqft</h6>
+                        </div>
+                        <div class="home-address">
+                            <h5 class="addy">
+                                600 Silliman St<br>
+                                San Francisco, CA 94134
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="home-section-4 home-custom">
+                        <div class="img-div">
+            
+                        </div>
+                        <div class="price-div">$2,188,000</div>
+                        <div class="bdBaSqft-div">
+                            <i class="fas fa-bed fa-style-on"></i> 
+                            <h6 class="h6-style-on">2bd</h6>
+        
+                            <i class="fas fa-bath fa-bed-style-on"></i> 
+                            <h6 class="h6-bed-style-on">3ba</h6>
+        
+                            <h6 class="h6-bed-style-on">1,234 sqft</h6>
+                        </div>
+                        <div class="home-address">
+                            <h5 class="addy">
+                                1200 California St #5D<br>
+                                San Francisco, CA 94109
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="home-section-5 home-custom">
+                            <div class="img-div">
+                
+                            </div>
+                            <div class="price-div">$1,895,000</div>
+                            <div class="bdBaSqft-div">
+                                <i class="fas fa-bed fa-style-on"></i> 
+                                <h6 class="h6-style-on">2bd</h6>
+            
+                                <i class="fas fa-bath fa-bed-style-on"></i> 
+                                <h6 class="h6-bed-style-on">3ba</h6>
+            
+                                <h6 class="h6-bed-style-on">1,234 sqft</h6>
+                            </div>
+                            <div class="home-address">
+                                <h5 class="addy">
+                                    569-571 Ivy St #15<br>
+                                    San Francisco, CA
+                                </h5>
+                            </div>
+                    </div>
+                    <div class="home-section-6 home-custom">
+                            <div class="img-div">
+                
+                            </div>
+                            <div class="price-div">$7,495,000+</div>
+                            <div class="bdBaSqft-div">
+                                <i class="fas fa-bed fa-style-on"></i> 
+                                <h6 class="h6-style-on">2bd</h6>
+            
+                                <i class="fas fa-bath fa-bed-style-on"></i> 
+                                <h6 class="h6-bed-style-on">3ba</h6>
+            
+                                <h6 class="h6-bed-style-on">1,234 sqft</h6>
+                            </div>
+                            <div class="home-address">
+                                <h5 class="addy">
+                                    900 Bush St #901 #15<br>
+                                    San Mateo, CA
+                                </h5>
+                            </div>
+                    </div>
+                    <div class="home-section-7 home-custom">
+                            <div class="img-div">
+                
+                            </div>
+                            <div class="price-div">$10,345,000</div>
+                            <div class="bdBaSqft-div">
+                                <i class="fas fa-bed fa-style-on"></i> 
+                                <h6 class="h6-style-on">2bd</h6>
+            
+                                <i class="fas fa-bath fa-bed-style-on"></i> 
+                                <h6 class="h6-bed-style-on">3ba</h6>
+            
+                                <h6 class="h6-bed-style-on">1,234 sqft</h6>
+                            </div>
+                            <div class="home-address">
+                                <h5 class="addy">
+                                    1047 Oak St #A<br>
+                                    Oakland, CA
+                                </h5>
+                            </div>
+                    </div>
+                    <div class="home-section-8 home-custom">
+                            <div class="img-div">
+                
+                            </div>
+                            <div class="price-div">$55,000,000</div>
+                            <div class="bdBaSqft-div">
+                                <i class="fas fa-bed fa-style-on"></i> 
+                                <h6 class="h6-style-on">2bd</h6>
+            
+                                <i class="fas fa-bath fa-bed-style-on"></i> 
+                                <h6 class="h6-bed-style-on">3ba</h6>
+            
+                                <h6 class="h6-bed-style-on">1,234 sqft</h6>
+                            </div>
+                            <div class="home-address">
+                                <h5 class="addy">
+                                    201 Harrison St #113<br>
+                                    San Jose, CA
+                                </h5>
+                            </div>
+                      </div>
+        
+        <!-- -------------------------------------------- -->
+        <!-- ---------JavaScript Add on Div------------------ -->
+        <!-- -------------------------------------------- -->
+        
+        
+                    <!-- <div class="home-section-1 home-custom">
+                        <div class="img-div">
+            
+                        </div>
+                        <div class="price-div">$1,974,000</div>
+                        <div class="bdBaSqft-div">
+                            <i class="fas fa-bed fa-style-on"></i> 
+                            <h6 class="h6-style-on">2bd</h6>
+        
+                            <i class="fas fa-bath fa-bed-style-on"></i> 
+                            <h6 class="h6-bed-style-on">3ba</h6>
+        
+                            <h6 class="h6-bed-style-on">1,234 sqft</h6>
+                        </div>
+                        <div class="home-address">
+                            <h5 class="addy">
+                                1874 Bonanza St #15<br>
+                                Oak Road, San Francisco, CA
+                            </h5>
+                        </div>
+                    </div> -->
+        
+        
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        
+        
+                </div>
+        
+        
+            </div>
+          </div>
+          <div class="rightside-map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71024.73442840358!2d-122.45264757814331!3d37.77829791257393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf79c53d4792d1272!2sBoutikia+Homes!5e0!3m2!1sen!2sus!4v1528843133390" width="100%" height="100%" frameborder="1" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        <!----------------------------------------->
+        <!------------Sign in Page Pop Up---------->
+        <!----------------------------------------->
+        
+        <!-- sign-wrapper displayShow-->
+          <div class="sign-in-div sign-wrapper"> 
+            <form class="form-signin">       
+              <h2 class="form-signin-heading">SIGN IN</h2>
+        
+              <h3 class="custom-input-text">USERNAME</h3>
+              <input type="text" class="form-control custom-input" name="username" placeholder="" required="" autofocus="" />
+              <br>
+              <h3 class="custom-input-text" style="margin-top: 10px;">PASSWORD</h3>
+              <input type="password" class="form-control custom-input" name="password" placeholder="" required=""/>      
+              <!-- <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+              </label> -->
+              <br>
+              <button class="btn btn-lg btn-primary btn-block custom-input-signin" type="submit">SIGN IN</button>   
+            </form>
+          </div>
+        
+        
+        <!----------------------------------------->
+        <!------------Add New Homes---------------->
+        <!----------------------------------------->
+        <!-- home-wrapper displayShow-home -->
+        <div class="add-newhome-div home-wrapper"> 
+                <form class="form-home">       
+                  <h2 class="home-heading">List your new home!</h2>
+        
+        <!-- --------IMAGE GALLERY---------- -->
+            <div class="gallery cf">
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/4.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/3.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/5.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/8.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/1.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/4.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/2.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/6.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/7.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/8.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/7.png?raw=true " />
+                    </div>
+                    <div>
+                            <img src="https://github.com/kenvantruong/real-estate/blob/master/img-houses/8.png?raw=true " />
+                    </div>
+                  </div>
+        
+        <!-- --------IMAGE GALLERY---------- -->
+        <form action="" id="form-platform-control">
+                <div class="position-input-houses">
+                  <h3 class="custom-input-text">Price</h3>
+                  <input type="text" id="price-input" class="form-control home-custom-input" name="price" placeholder="" required="" autofocus="" />
+                </div>
+        
+                  <!-- <h3 class="custom-input-text" style="margin: 39px 0px 39px 0px;">Address</h3> -->
+        
+                <div class="position-input-houses">
+                  <h4 class="custom-input-text">Street:</h4>
+                  <input type="text"  id="street-input" class="form-control home-custom-input" name="adress" placeholder="" required="" autofocus="" />  
+                </div>
+                
+                <div class="position-input-houses">
+                  <h4 class="custom-input-text">City:</h4>
+                  <input type="text"  id="city-input" class="form-control home-custom-input" name="adress" placeholder="" required="" autofocus="" /> 
+                </div>
+                
+                <div class="position-input-houses">
+                    <!-- State Text Input -->
+                  <h4 class="custom-input-text">State:</h4>
+                  <input type="text"  id="state-input" class="form-control home-custom-input" name="adress" placeholder="" required="" autofocus="" /> 
+                </div>
+        
+                  <br>
+                  <!-- Options -->
+                  <h3 class="custom-input-text" style="margin-top: 10px;">Options</h3>
+                  <!-- Bedroom: -->
+                  <i class="fas fa-bed fa-style-on"></i> 
+                  <select name="" id="">
+                      <option value="">1 Bed</option>
+                      <option value="">2 Bed</option>
+                      <option value="">3 Bed</option>
+                      <option value="">4 Bed</option>
+                      <option value="">5 Bed+</option>
+                  </select>
+                  <!-- Bathroom: -->
+                  <i class="fas fa-bath fa-bed-style-on"></i> 
+                  <select name="" id="">
+                        <option value="">1 Bath</option>
+                        <option value="">2 Bath</option>
+                        <option value="">3 Bath</option>
+                        <option value="">4 Bath</option>
+                        <option value="">5 Bath+</option>
+                    </select>
+                  <!-- Sqft -->
+                  <i class="fas fa-home"></i>
+                  <select name="" id="">
+                        <option value="">1,000sqft</option>
+                        <option value="">3,000sqft</option>
+                        <option value="">5,000sqft</option>
+                        <option value="">10,000sqft</option>
+                        <option value="">20,000sqft</option>
+                    </select>
+        
+                  <!-- <input type="text" class="form-control custom-input" name="options" placeholder="" required="" autofocus="" />     -->
+        
+                  <!-- btn btn-lg btn-primary btn-block  -->
+                  <br>
+                  <!-- Submit Button -->
+                  <div class="input-submit-style">
+                  <input id="submit-btn-homes" class="form-input-submit" 
+                  type="submit"> 
+                  </div>
+              </div>
+        </form>
+        
+        <script src="data.js"></script>
+        </body>
 </html>
 
